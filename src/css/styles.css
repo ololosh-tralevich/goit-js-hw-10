@@ -29,7 +29,6 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-
 }
 
 li:last-child {
@@ -71,7 +70,7 @@ p {
   margin-bottom: 10px;
 }
 
- .country-info-list {
+.country-info-list {
   align-items: baseline;
 }
 

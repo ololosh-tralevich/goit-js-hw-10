@@ -12,7 +12,6 @@ textField.addEventListener(
   'input',
   debounce(() => {
     let countryName = textField.value;
-    console.log(textField.value)
     if (!textField.value) {
       countryList.innerHTML = '';
       countryBlock.innerHTML = '';
@@ -20,7 +19,7 @@ textField.addEventListener(
     }
 
     fetchCountries(countryName)
-    .then(data => {
+      .then(data => {
         countryList.innerHTML = '';
         countryBlock.innerHTML = '';
 
@@ -29,7 +28,6 @@ textField.addEventListener(
           return;
         } else if (data.length >= 2) {
           for (let country of data) {
-            console.log(country);
             countryList.insertAdjacentHTML(
               'beforeend',
               `<li>
